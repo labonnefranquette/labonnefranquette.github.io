@@ -1,6 +1,21 @@
 ---
 layout: default
+title: Cuisine traditionnelle et Spécialités du Sud Ouest
+breadcrumb: Cuisine traditionnelle et Spécialités du Sud Ouest
+link-title: Cuisine traditionnelle et Spécialités du Sud Ouest
+keywords: cuisine traditionnelle, spécialite sud ouest, cassoulet, cassoulet castelnaudary, foie gras, magret de canard
+description: Découvrez en images notre Cuisine traditionnelle et Spécialités du Sud Ouest. Cassoulet de castelnaudary, foie gras, magret de canard
 
 ---
 
-acces
+<div class="row">
+    <div class="span12">
+        <h2>Album en cours de réalisation</h2>
+        {% for image in images %}
+        <a class="fancybox" rel="gallery" href="/assets/img/gallery/restaurant/bonne-franquette-{{image}}.jpg" title=" |La Bonne Franquette">
+            <img src="/assets/img/gallery/restaurant/tn/bonne-franquette-{{image}}.jpg"
+                 title=" | La Bonne Franquette" alt=" | La Bonne Franquette" />
+        </a>
+        {% endfor %}
+    </div>
+</div>

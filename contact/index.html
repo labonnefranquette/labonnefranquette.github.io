@@ -1,6 +1,51 @@
 ---
 layout: default
+title: Nous contacter
+breadcrumb: Nous contacter
+link-title: Nous contacter
+keywords: contact la bonne franquette, contacter restaurant loire, restaurant feurs, réservation restaurant feurs, reservation restaurant loire, restaurant du sud ouests
+description: Contacter nous pour vos réservations ou pour définir ensemble un menu de groupe
 
 ---
 
-acces
+<div class="row">
+    <div id="contact-sidebar" class="span4 offset1">
+        <p>
+            Vous pouvez aussi nous contacter directement par téléphone au <span class="phone">04 77 26 19 53</span>
+        </p>
+        <a class="fancybox" rel="gallery" href="/assets/img/contact/restaurant-sud-ouest.jpg" title="Facade de restaurant | La Bonne Franquette">
+            <img src="/assets/img/contact/tn-restaurant-sud-ouest.jpg"
+                 title="Facade de restaurant | La Bonne Franquette" alt="Restaurant La Bonne Franquette à Feurs" />
+        </a>
+        <div class="bottom">
+            <p>
+                Ouvert le weekend
+            </p>
+            <p>
+                Fermeture Mardi soir, Mercredi et jeudi soir
+            </p>
+            <p class="italic">
+                (...Possibilité d'ouverture pour repas de groupe...)
+            </p>
+        </div>
+    </div>
+
+
+
+    <div>
+        <form action="/contact/" method="post"  class="form-horizontal contact">
+        {{ form_errors(form) }}
+
+        {{ form_row(form.name) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.subject) }}
+        {{ form_row(form.body) }}
+
+        {{ form_rest(form) }}
+        <div class="form-actions">
+            <input type="submit" value="Envoyer" class="btn btn-large"/>
+        </div>
+        </form>
+    </div>
+</div>
+

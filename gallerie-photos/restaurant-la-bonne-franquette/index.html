@@ -1,6 +1,20 @@
 ---
 layout: default
+title: Notre Restaurant en images
+breadcrumb: Notre Restaurant en images
+link-title: Notre Restaurant en images
+keywords: presentation restaurant, cassoulet de castelnaudary, foie gras, magret de canard
+description: Découvrez le restaurant la Bonne Franquette en images. Nos deux salles, notre cuisine...
 
 ---
 
-acces
+<div class="row gallery">
+    <div class="span12">
+        {% for image in (1..22) %}
+        <a class="fancybox" rel="gallery" href="/assets/img/gallery/restaurant/bonne-franquette-{{ image }}.jpg" title="Notre restaurant |La Bonne Franquette">
+            <img src="/assets/img/gallery/restaurant/tn/bonne-franquette-{{ image }}.jpg"
+                 title="Notre restaurant | La Bonne Franquette" alt="Notre restaurant | La Bonne Franquette" />
+        </a>
+        {% endfor %}
+    </div>
+</div>

@@ -1,6 +1,29 @@
 ---
 layout: default
+title: Décoration de Noël
+breadcrumb: Décoration de Noël
+link-title: Décoration de Noël
+keywords: décoration, decoration noel, decoration restaurant
+description: Découvrez notre restaurant avec ses décoration de Noël...
 
 ---
 
-acces
+<div class="row gallery-text">
+    <p class="center">
+        Parce que Noël est un moment magique nous avons pendant des années décoré notre restaurant pour les fêtes de fin d'années.
+    </p>
+    <p class="center">
+        Venez découvrir les petites figurines de notre vitrine, les décorations murales et notre gros nounours blanc qui a ravi les petits...
+        mais les plus grands aussi...
+    </p>
+</div>
+<div class="row gallery">
+    <div class="span12">
+        {% for image in (1..73) %}
+        <a class="fancybox" rel="gallery" href="/assets/img/gallery/noel/bonne-franquette-decoration-noel-{{ image }}.jpg" title="Nos décorations de noël |La Bonne Franquette">
+            <img src="/assets/img/gallery/noel/tn/bonne-franquette-decoration-noel-{{ image }}.jpg"
+                 title="Nos décorations de noël | La Bonne Franquette" alt="Nos décorations de noël | La Bonne Franquette" />
+        </a>
+        {% endfor %}
+    </div>
+</div>
