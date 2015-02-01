@@ -2,4 +2,4 @@ name: La Bonne Franquette
 markdown: redcarpet
 pygments: true
 
-environment: dev
+environment: prod
