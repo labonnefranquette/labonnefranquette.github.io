@@ -1,0 +1,248 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="fr"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+<head>
+    <base href="/" />
+    <link rel='index' title='La Bonne Franquette' href="/" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="fr" />
+    <meta name="language" content="fr" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Nicolas Bastien">
+    <meta name="copyright" content="&copy; 2012 bonnefranquette.com" />
+    <meta name="owner" content="Marc Bastien | La Bonne Franquette" />
+    <meta name="viewport" content="width=device-width">
+    <meta name="google-site-verification" content="yoRYu_pv0xiNchHrEZCsUR4Sf50IHrksTjVGqHwY5js" />
+    <meta name="y_key" content="dea89945ee29516e" />
+    <meta name="robots" content="all" />
+    <meta name="resource-type" content="document" />
+    <title>{{ page.title }} | {{site.name }}</title>
+    <meta name="keywords" content="{{ page.keywords }} ">
+    <meta name="description" content="{{ page.description }} ">
+
+    {% if (site.environment == 'dev') %}
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    {% else %}
+    <link rel="stylesheet" href="/assets/css/style-concat.min.css" />
+    {% endif %}
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/libs/html5-3.4-respond-1.1.0.min.js"></script>
+    <![endif]-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="header-container">
+    <div id="header" class="container">
+        <div id="header-logo"></div>
+        <div id="header-title">
+            <h1>La Bonne Franquette</h1>
+            <div id="subheader">
+                <h3 class="alt">cuisine traditionnelle et spécialités du sud-ouest à feurs</h3>
+            </div>
+        </div>
+        <div id="header-reservation"class="visible-desktop">
+            <div class="reservation">Réservation au : <span class="phone">04-77-26-19-53</span></div>
+            <div class="horaire">...Ouvert le weekeend...</div>
+        </div>
+        <div id="navigation" class="navbar nav-pills">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#"></a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+                            <li><a href="/" title="">Accueil</a></li>
+                            <li><a href="/presentation-du-restaurant/" title="">Présentation</a></li>
+                            <li><a href="/nos-menus/" title="">Nos Menus</a></li>
+                            <li><a href="/gallerie-photos/" title="">Galerie photos</a></li>
+                            <li><a href="/acces/" title="">Accès</a></li>
+                            <li><a href="/contact/" title="">Nous contacter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if (page.id == 'homepage') %}
+        <div id="header-block-container" class="visible-desktop">
+            <div id="piecemaker"></div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<div id="breadcrumb-container-outer">
+    <div id="breadcrumb-container">
+        <div class="breadcrumb-container-border"></div>
+        <div id="breadcrumb" class="container">
+            <h1>{{ page.breadcrumb }}</h1>
+            <div style="float: right; padding-top: 10px;">
+                <g:plusone></g:plusone>
+            </div>
+        </div>
+        <div class="breadcrumb-container-border"></div>
+    </div>
+</div>
+<div id="page-container-outer">
+    <div id="page-container" class="container">
+        {{ content }}
+    </div>
+    <div id="page-bottom"></div>
+</div>
+
+<div id="footer-container-outer">
+    <div id="footer-top-container">
+        <div class="container">
+            Pour que nous puissions préparer votre table, pensez à réserver au : 04-77-26-19-53
+        </div>
+    </div>
+    <div id="footer-container">
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <h3>Nos menus</h3>
+                    <ul class="nos-menus">
+                        <li>
+                            <h4>Menu Grabotte : 19,80 à 23 €</h4>
+                            <p>Entrée + Plat + Fromage ou Dessert : 19,80 €</p>
+                            <p>Entrée + Plat + Fromage  +  Dessert : 23 €</p>
+                        </li>
+                        <li>
+                            <h4>Menu Saveurs : 27 €</h4>
+                            <p>Entrée + Plat + Fromage  +  Dessert</p>
+                        </li>
+                        <li>
+                            <h4>Menu Découverte : 29 €</h4>
+                            <p>Foie Gras + Cassoulet + Fromage  +  Dessert</p>
+                        </li>
+                        <li>
+                            <h4>Menu Dégustation : 40 €</h4>
+                            <p>Mise en bouche + Entrée + Plat + Fromage + Dessert</p>
+                        </li>
+                        <li><h3>et pour les plus petits...</h3></li>
+                        <li>
+                            <h4>Menu Fripouille pour les enfants : 9,50 €</h4>
+                            <p>Entrée + Plat + Dessert</p>
+                        </li>
+                    </ul>
+                    <p class="right">
+                        <a href="/nos-menus/">Nos menus en détails</a>
+                    </p>
+                </div>
+                <div class="span5">
+                    <h3>Nos photos</h3>
+                    <ul class="gallery">
+                        <li class="gallery-restaurant">
+                            <a href="/gallerie-photos/restaurant-la-bonne-franquette/">
+                                <h4>Notre restaurant</h4>
+                                <p>
+                                    Découvrez La Bonne Franquette en images
+                                </p>
+                            </a>
+                        </li>
+                        <li class="gallery-cuisine">
+                            <a href="/gallerie-photos/notre-cuisine/">
+                                <h4>Notre cusine traditionnelle</h4>
+                                <p>
+                                    Nos plats fait maison afin de ravir les gourmands mais aussi les gourmets
+                                </p>
+                            </a>
+                        </li>
+                        <li class="gallery-noel">
+                            <a href="/gallerie-photos/decoration-de-noel/">
+                                <h4>Nos décorations de Noël</h4>
+                                <p>
+                                    Parce que Noël est un moment magique nous avons pendant des années décoré notre restaurant pour les fêtes de fin d'années
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="right">
+                        <a href="/gallerie-photos/">Notre Gallerie photos</a>
+                    </p>
+                </div>
+                <div class="span3">
+                    <h3>Nous trouver</h3>
+                    <p>
+                        16 rue Duvernay 42110 Feurs - Loire 42
+                    </p>
+                    <p>
+                        Tél : 04-77-26-19-53
+                    </p>
+                    <p class="center">
+                        <a href="/acces/">
+                            <img class="map" src="/assets/img/layout/footer/gmap.png"
+                                 title="Itinéraire | La Bonne Franquette" alt="Itinéraire | La Bonne Franquette" />
+                        </a>
+                    </p>
+                    <p class="right">
+                        <a href="/acces/">Notre page plan d'accès</a>
+                    </p>
+                    <g:plusone size="tall"></g:plusone>
+                    <p class="center">
+                        <a href="/plan-du-site/">Plan du site</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer-bottom-container">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+
+{% if (site.environment == 'dev') %}
+<script src="/assets/js/plugins.js"></script>
+<script src="/assets/js/script.js"></script>
+{% else %}
+<script src="/assets/js/scripts-concat.js"></script>
+{% endif %}
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".fancybox").fancybox({openEffect	: 'elastic'});
+        $(".alert").alert();
+    });
+    {% if (site.environment != 'dev') %}
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22680419-4']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    {% endif %}
+</script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+    {lang: 'fr'}
+</script>
+{% if (page.id == 'homepage') %}
+<script src="/assets/js/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+    var flashvars = {};
+    flashvars.cssSource = "/assets/css/piecemaker.css";
+    flashvars.xmlSource = "/assets/swf/piecemaker.xml";
+
+    var params = {};
+    params.play = "true";
+    params.menu = "false";
+    params.scale = "showall";
+    params.wmode = "transparent";
+    params.allowfullscreen = "true";
+    params.allowscriptaccess = "always";
+    params.allownetworking = "all";
+
+    swfobject.embedSWF('/assets/swf/piecemaker.swf', 'piecemaker', '1000', '330', '10', null, flashvars, params, null);
+</script>
+{% endif %}
+</body>
+</html>
