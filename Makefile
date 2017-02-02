@@ -3,3 +3,6 @@ ai:
 
 build:
 	jekyll serve --watch
+
+docker:
+	sudo docker run --rm -v "$$PWD:/src" -p 4000:4000 grahamc/jekyll serve --watch -H 0.0.0.0
