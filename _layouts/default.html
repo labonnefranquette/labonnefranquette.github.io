@@ -32,8 +32,11 @@
     <script src="/assets/js/libs/html5-3.4-respond-1.1.0.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="/assets/favicon.ico" />
+
+
+    <script type="text/javascript" src="http://app.mailjet.com/statics/js/widget.modal.js"></script>
 </head>
-<body>
+<body data-token="9fe3f467d0ccb07ee69cace524d18f81" onunload="mjOpenPopin(event, this)">
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 <div id="header-container">
     <div id="header" class="container">
@@ -70,12 +73,53 @@
                 </div>
             </div>
         </div>
+
+        <div class="center">
+            <div data-token="9fe3f467d0ccb07ee69cace524d18f81" class="mj-w-btn" style="font-family: Ubuntu, Helvetica; color: white; padding: 0 25px; background-color: #f0622b; text-align: center; vertical-align: middle; display: inline-block; border-radius: 3px;">
+                <div style="display: table; height: 45px;">
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <div style="font-family:Ubuntu, Helvetica; display: inline-block; text-align: center; font-size: 13px; vertical-align: middle;"><b>ABONNEZ-VOUS AUX RECETTES DE LA BONNE FRANQUETTE !</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin: 1em; padding: 2em; background: #dbda97; border: solid 1px #000000; color: #FFFFFF;">
+            <div class="row">
+                <div class="span5 offset1" style="font-size: 1.1em">
+                    <h2>Après 17 années à votre service, la bonne franquette ferme ces portes</h2>
+                    <p>
+                        Nous avons eu le plaisir de vous recevoir dans notre restaurant et nous espérons que vous réserverez un acceuil aussi chaleureux
+                        à Vanessa et Bertrand qui prennent notre suite.
+                    </p>
+                    <p>
+                        Comme beaucoup de clients nous le demandent depuis des années, nous allons prendre le temps de rassembler toutes nous recettes dans un livre
+                        (cassoulet, foie gras...)
+                    </p>
+                    <p>
+                        Afin que nous puissions vous informer quand ce livre sera prêt, laisser nous simplement votre email ci-dessous.
+                    </p>
+                </div>
+                <div class="span4 offset1 center">
+                    <h2>Les recettes de la Bonne Franquette</h2>
+                    <div>
+                        <img src="/assets/img/recette-la-bonne-franquette.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="row center" style="margin-top: 2em;">
+                <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://app.mailjet.com/widget/iframe/2doK/2qW" width="730" height="208"></iframe>
+            </div>
+            <h2 class="center">Un grand Merci à tous</h2>
+        </div>
+
         {% if (page.id == 'homepage') %}
         <div id="header-block-container" class="visible-desktop">
             <div id="piecemaker"></div>
         </div>
         {% endif %}
     </div>
+    <data data-token="9fe3f467d0ccb07ee69cace524d18f81" class="mj-w-data" data-apikey="2doK" data-w-id="2qY" data-lang="fr_FR" data-base="http://app.mailjet.com" data-width="640" data-height="328" data-statics="statics"></data>
 </div>
 <div id="breadcrumb-container-outer">
     <div id="breadcrumb-container">
@@ -91,8 +135,30 @@
 </div>
 <div id="page-container-outer">
     <div id="page-container" class="container">
+
+        <div class="center">
+            <div data-token="9fe3f467d0ccb07ee69cace524d18f81" class="mj-w-btn" style="font-family: Ubuntu, Helvetica; color: white; padding: 0 25px; background-color: #f0622b; text-align: center; vertical-align: middle; display: inline-block; border-radius: 3px;">
+                <div style="display: table; height: 45px;">
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <div style="font-family:Ubuntu, Helvetica; display: inline-block; text-align: center; font-size: 13px; vertical-align: middle;"><b>ABONNEZ-VOUS AUX RECETTES DE LA BONNE FRANQUETTE !</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         {{ content }}
+
+        <div class="center">
+            <div data-token="9fe3f467d0ccb07ee69cace524d18f81" class="mj-w-btn" style="font-family: Ubuntu, Helvetica; color: white; padding: 0 25px; background-color: #f0622b; text-align: center; vertical-align: middle; display: inline-block; border-radius: 3px;">
+                <div style="display: table; height: 45px;">
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <div style="font-family:Ubuntu, Helvetica; display: inline-block; text-align: center; font-size: 13px; vertical-align: middle;"><b>ABONNEZ-VOUS AUX RECETTES DE LA BONNE FRANQUETTE !</b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <div id="page-bottom"></div>
 </div>
 
